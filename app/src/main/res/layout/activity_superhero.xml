@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.phgof.android_project.SuperHero.MainSuperHero">
+
+    <TextView
+        android:id="@+id/tvhero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:hint="NAME"
+        android:textColor="#66BB6A"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imghero"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/image1"
+        android:layout_below="@id/tvhero"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_dc"
+        android:layout_below="@id/imghero"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
