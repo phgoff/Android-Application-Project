@@ -49,7 +49,7 @@ public class MainCustomList extends AppCompatActivity {
                 Bundle bundle = new Bundle();
                 Intent intent= new Intent(MainCustomList.this, MainSuperHero.class);
 
-                bundle.putString("name",itemValue.toString());
+                bundle.putString("heroname",itemValue.toString());
                 bundle.putInt("resId",resId[position]);
                 bundle.putParcelable("bmlogo",bmlogo);
 
@@ -57,5 +57,6 @@ public class MainCustomList extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Toast.makeText(this, "Welcom To MARVEL", Toast.LENGTH_SHORT).show();
     }
 }

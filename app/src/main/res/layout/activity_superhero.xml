@@ -28,8 +28,9 @@
         android:id="@+id/imglogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/logo_dc"
+        android:src="@drawable/logo_marvel2"
         android:layout_below="@id/imghero"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

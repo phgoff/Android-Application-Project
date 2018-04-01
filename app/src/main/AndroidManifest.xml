@@ -22,7 +22,10 @@
         <activity
             android:name=".RecyclerList.MainRecyclerList"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".SuperHero.MainSuperHero"
+        <activity
+            android:name=".SuperHero.MainSuperHero"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".PacelableData.MainPercalable"
             android:parentActivityName=".MainActivity"></activity>
     </application>
 

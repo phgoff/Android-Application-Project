@@ -27,12 +27,12 @@ public class MainSuperHero extends AppCompatActivity {
         imglogo = findViewById(R.id.imglogo);
 
         Bundle bd = getIntent().getBundleExtra("bundle");
-        tvhero.setText(bd.getCharSequence("name"));
+        tvhero.setText(bd.getCharSequence("heroname"));
         imghero.setImageResource(bd.getInt("resId"));
 
         Bitmap bm = bd.getParcelable("bmlogo");
         imglogo.setImageBitmap(bm);
-        Toast.makeText(this,"GET: " + bd.getString("name"),Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this,"GET: " + bd.getString("heroname"),Toast.LENGTH_SHORT).show();
 
     }
 }

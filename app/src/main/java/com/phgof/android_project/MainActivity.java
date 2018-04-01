@@ -7,6 +7,7 @@ import android.content.res.Configuration;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -14,11 +15,14 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.phgof.android_project.CustomList.MainCustomList;
+import com.phgof.android_project.PacelableData.MainPercalable;
+import com.phgof.android_project.PacelableData.MyData;
 import com.phgof.android_project.RecyclerList.MainRecyclerList;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private ListView mListView;
     private TextView tv1;
     private Button btnenter;
+    private EditText editname;
 
 
     @Override
@@ -36,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        editname = findViewById(R.id.edit1);
+        btnenter = findViewById(R.id.btnenter);
         //Drawable Menu
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         actionBarDrawerToggle = new ActionBarDrawerToggle(MainActivity.this,
@@ -72,11 +79,26 @@ public class MainActivity extends AppCompatActivity {
                 }
                 //   tv1.setText("Position :"+ position+"  ListItem : " +itemValue);
                 Toast.makeText(getApplicationContext(),
-                        "Position :"+ position+"  ListItem : " +itemValue , Toast.LENGTH_SHORT)
-                        .show();
+                        "You Selected: "+itemValue , Toast.LENGTH_SHORT).show();
             }
         });
         // End of Section
+
+        btnenter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            Intent intententer = new Intent(MainActivity.this, MainPercalable.class);
+            String name = editname.getText().toString();
+
+            if(TextUtils.isEmpty(name)) {
+                    editname.setError("Plese Enter Your Name");
+                    return;
+            }
+            MyData md = new MyData(name);
+            intententer.putExtra("uname", md );
+            startActivity(intententer);
+            }
+        });
 
     }
 

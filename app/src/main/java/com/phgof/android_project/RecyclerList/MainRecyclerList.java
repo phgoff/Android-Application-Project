@@ -39,6 +39,7 @@ public class MainRecyclerList extends AppCompatActivity implements ItemClickList
         listViewR.setLayoutManager(new LinearLayoutManager(this));
         adapter.setClickListener(this);
         listViewR.setAdapter(adapter);
+        Toast.makeText(this, "Welcome To DC", Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -55,7 +56,7 @@ public class MainRecyclerList extends AppCompatActivity implements ItemClickList
         Bundle bundle = new Bundle();
         Intent intent= new Intent(MainRecyclerList.this, MainSuperHero.class);
 
-        bundle.putString("name",adapter.getItem(position).toString());
+        bundle.putString("heroname",adapter.getItem(position).toString());
         bundle.putInt("resId",resId[position]);
         bundle.putParcelable("bmlogo",bmlogo);
 
@@ -63,5 +64,6 @@ public class MainRecyclerList extends AppCompatActivity implements ItemClickList
         startActivity(intent);
 
     }
+    
 
 }
