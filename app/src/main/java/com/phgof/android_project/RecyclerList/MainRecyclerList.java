@@ -62,7 +62,6 @@ public class MainRecyclerList extends AppCompatActivity implements ItemClickList
 
         intent.putExtra("bundle",bundle);
         startActivity(intent);
-
     }
     
 

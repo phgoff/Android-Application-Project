@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle actionBarDrawerToggle;
-    private String[] mDrawerTitle = {"Main","Marvel's Hero","DC's Hero","Help"};
+    private String[] mDrawerTitle = {"Home","Marvel's Hero","DC's Hero","Choose Heroes"};
     private ListView mListView;
     private TextView tv1;
     private Button btnenter;
@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         editname = findViewById(R.id.edit1);
         btnenter = findViewById(R.id.btnenter);
+
         //Drawable Menu
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         actionBarDrawerToggle = new ActionBarDrawerToggle(MainActivity.this,
@@ -63,15 +64,17 @@ public class MainActivity extends AppCompatActivity {
                 mDrawerLayout.closeDrawers();
                 switch (position) {
                     case 0:
-//                        Intent intent= new Intent(MainActivity.this, Activity2.class);
-//                        startActivity(intent);
                         break;
                     case 1:
-                        Intent intent2= new Intent(MainActivity.this, MainCustomList.class);
-                        startActivity(intent2);
+                        Intent intent1= new Intent(MainActivity.this, MainCustomList.class);
+                        startActivity(intent1);
                         break;
                     case 2:
-                        Intent intent3= new Intent(MainActivity.this, MainRecyclerList.class);
+                        Intent intent2= new Intent(MainActivity.this, MainRecyclerList.class);
+                        startActivity(intent2);
+                        break;
+                    case 3:
+                        Intent intent3= new Intent(MainActivity.this, MainPercalable.class);
                         startActivity(intent3);
                         break;
                     default:
@@ -89,7 +92,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
             Intent intententer = new Intent(MainActivity.this, MainPercalable.class);
             String name = editname.getText().toString();
-
             if(TextUtils.isEmpty(name)) {
                     editname.setError("Plese Enter Your Name");
                     return;
@@ -99,7 +101,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intententer);
             }
         });
-
     }
 
     @Override
