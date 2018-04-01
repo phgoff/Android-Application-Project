@@ -2,4 +2,8 @@
     <string name="app_name">Dymicer\'s App</string>
     <string name="open_drawer">Open</string>
     <string name="close_drawer">Close</string>
+    <string name="welcome">WELCOME!</string>
+    <string name="enter">Enter</string>
+    <string name="which_sides_are_you_on">Which Sides Are You On?</string>
+    <string name="hello">Hello</string>
 </resources>

@@ -31,11 +31,11 @@ public class MainPercalable extends AppCompatActivity {
        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
        String guest = "Guest";
-       tvpercal.setText("Hello " + guest);
+       tvpercal.setText(guest);
        MyData md = getIntent().getParcelableExtra("uname");
        if(md != null)
-            tvpercal.setText("Hello " + md.names);
-       
+            tvpercal.setText(md.names);
+
         pmavel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

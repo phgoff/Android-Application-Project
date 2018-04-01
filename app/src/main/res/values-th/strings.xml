@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome">ยินดีต้อนรับ</string>
+    <string name="enter">ยืนยัน</string>
+    <string name="which_sides_are_you_on">คุณอยู่ฝ่ายไหน?</string>
+    <string name="hello">สวัสดี</string>
+</resources>
