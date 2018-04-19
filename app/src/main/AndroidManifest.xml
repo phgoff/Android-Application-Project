@@ -18,15 +18,15 @@
         </activity>
         <activity
             android:name=".CustomList.MainCustomList"
-            android:parentActivityName=".PacelableData.MainPercalable" />
+            android:parentActivityName=".PacelableData.MainPacelable" />
         <activity
             android:name=".RecyclerList.MainRecyclerList"
-            android:parentActivityName=".PacelableData.MainPercalable" />
+            android:parentActivityName=".PacelableData.MainPacelable" />
         <activity
             android:name=".SuperHero.MainSuperHero"
             android:parentActivityName=".SuperHero.MainSuperHero" />
 
-        <activity android:name=".PacelableData.MainPercalable"
+        <activity android:name=".PacelableData.MainPacelable"
             android:parentActivityName=".MainActivity"/>
 
     </application>

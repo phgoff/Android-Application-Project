@@ -8,8 +8,6 @@ import android.support.annotation.Nullable;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.text.TextUtils;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -21,7 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.phgof.android_project.CustomList.MainCustomList;
-import com.phgof.android_project.PacelableData.MainPercalable;
+import com.phgof.android_project.PacelableData.MainPacelable;
 import com.phgof.android_project.PacelableData.MyData;
 import com.phgof.android_project.RecyclerList.MainRecyclerList;
 
@@ -74,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent2);
                         break;
                     case 3:
-                        Intent intent3= new Intent(MainActivity.this, MainPercalable.class);
+                        Intent intent3= new Intent(MainActivity.this, MainPacelable.class);
                         startActivity(intent3);
                         break;
                     default:
@@ -90,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         btnenter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            Intent intententer = new Intent(MainActivity.this, MainPercalable.class);
+            Intent intententer = new Intent(MainActivity.this, MainPacelable.class);
             String name = editname.getText().toString();
             if(TextUtils.isEmpty(name)) {
                     editname.setError("Plese Enter Your Name");

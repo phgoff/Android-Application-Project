@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.phgof.android_project.PacelableData.MainPercalable">
+    tools:context="com.phgof.android_project.PacelableData.MainPacelable">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello"
-        android:layout_marginLeft="45dp"
+        android:layout_marginLeft="40dp"
         android:textColor="#00cc36"
         android:textSize="40sp"/>
     <TextView

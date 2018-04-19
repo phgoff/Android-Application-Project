@@ -6,13 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.phgof.android_project.CustomList.MainCustomList;
 import com.phgof.android_project.R;
 import com.phgof.android_project.RecyclerList.MainRecyclerList;
 
-public class MainPercalable extends AppCompatActivity {
+public class MainPacelable extends AppCompatActivity {
 
     private TextView tvpercal;
     private ImageView pmavel;
@@ -21,13 +20,13 @@ public class MainPercalable extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_percalable);
+        setContentView(R.layout.activity_pacelable);
         tvpercal = findViewById(R.id.tvpacel);
         pmavel = findViewById(R.id.pamarvel);
         pdc = findViewById(R.id.pdc);
 
         //Change actionbar's name and back button to ..
-       getSupportActionBar().setTitle("Pecelable");
+       getSupportActionBar().setTitle("Pacelable");
        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
        String guest = "Guest";
@@ -39,7 +38,7 @@ public class MainPercalable extends AppCompatActivity {
         pmavel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainPercalable.this, MainCustomList.class);
+                Intent i = new Intent(MainPacelable.this, MainCustomList.class);
                 startActivity(i);
             }
         });
@@ -47,7 +46,7 @@ public class MainPercalable extends AppCompatActivity {
         pdc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainPercalable.this, MainRecyclerList.class);
+                Intent i = new Intent(MainPacelable.this, MainRecyclerList.class);
                 startActivity(i);
             }
         });
