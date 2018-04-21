@@ -19,6 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.phgof.android_project.CustomList.MainCustomList;
+import com.phgof.android_project.Dialog.DialogActivity;
 import com.phgof.android_project.PacelableData.MainPacelable;
 import com.phgof.android_project.PacelableData.MyData;
 import com.phgof.android_project.RecyclerList.MainRecyclerList;
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle actionBarDrawerToggle;
-    private String[] mDrawerTitle = {"Home","Marvel's Hero","DC's Hero","Choose Heroes"};
+    private String[] mDrawerTitle = {"Home","Marvel's Hero","DC's Hero","Choose Heroes","Dialogs"};
     private ListView mListView;
     private TextView tv1;
     private Button btnenter;
@@ -74,6 +75,10 @@ public class MainActivity extends AppCompatActivity {
                     case 3:
                         Intent intent3= new Intent(MainActivity.this, MainPacelable.class);
                         startActivity(intent3);
+                        break;
+                    case 4:
+                        Intent intent4= new Intent(MainActivity.this, DialogActivity.class);
+                        startActivity(intent4);
                         break;
                     default:
                         break;

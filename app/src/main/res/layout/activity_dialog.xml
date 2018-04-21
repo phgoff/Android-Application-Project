@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.phgof.android_project.Dialog.DialogActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvdl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIALOGS "
+        android:layout_gravity="center"
+        android:textSize="50sp"
+        android:textColor="#F0F6"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOTIFICATION"
+        android:layout_gravity="center"
+        android:textSize="40sp"
+        android:textColor="#F0F9"/>
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD Message"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/btndeldl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="DELETE MESSAGE"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="115dp"
+        android:text="Created by dymicer"/>
+</LinearLayout>

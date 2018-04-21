@@ -25,10 +25,11 @@
         <activity
             android:name=".SuperHero.MainSuperHero"
             android:parentActivityName=".SuperHero.MainSuperHero" />
-
-        <activity android:name=".PacelableData.MainPacelable"
-            android:parentActivityName=".MainActivity"/>
-
+        <activity
+            android:name=".PacelableData.MainPacelable"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Dialog.DialogActivity"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>
