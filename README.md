@@ -8,4 +8,4 @@ This is my 1st Android-Application
   * RecyclerListView
 * Dialog
 * Notification
-
+* Fragments
