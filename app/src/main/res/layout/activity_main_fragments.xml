@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.phgof.android_project.Fragments.MainFragments">
+
+    <TextView
+        android:id="@+id/tv1_frag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="FRAGMENTS"
+        android:textColor="#F56565"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/btnadd_frag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1_frag"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:text="MARVEL"
+
+        />
+     <Button
+            android:id="@+id/btnadd2_frag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1_frag"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="40dp"
+            android:text="DC"
+
+            />
+
+    <Button
+        android:id="@+id/btndel_frag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1_frag"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/btnadd_frag"
+        android:text="DELETE" />
+
+    <!--<fragment-->
+    <!--android:id="@+id/fragment"-->
+    <!--android:nacom.phgof.android_project.Fragments.BlankFragmentment"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/btnadd_frag"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="50dp" />-->
+
+    <LinearLayout
+        android:id="@+id/sended_frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"></LinearLayout>
+
+
+</RelativeLayout>

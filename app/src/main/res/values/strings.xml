@@ -6,4 +6,7 @@
     <string name="enter">Enter</string>
     <string name="which_sides_are_you_on">Which Sides Are You On?</string>
     <string name="hello">Hello</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import com.phgof.android_project.CustomList.MainCustomList;
 import com.phgof.android_project.Dialog.DialogActivity;
+import com.phgof.android_project.Fragments.MainFragments;
 import com.phgof.android_project.PacelableData.MainPacelable;
 import com.phgof.android_project.PacelableData.MyData;
 import com.phgof.android_project.RecyclerList.MainRecyclerList;
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle actionBarDrawerToggle;
-    private String[] mDrawerTitle = {"Home","Marvel's Hero","DC's Hero","Choose Heroes","Dialogs"};
+    private String[] mDrawerTitle = {"Home","Marvel's Hero","DC's Hero","Choose Heroes","Dialogs","Fragments"};
     private ListView mListView;
     private TextView tv1;
     private Button btnenter;
@@ -80,6 +81,11 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent4= new Intent(MainActivity.this, DialogActivity.class);
                         startActivity(intent4);
                         break;
+                    case 5:
+                        Intent intent5= new Intent(MainActivity.this, MainFragments.class);
+                        startActivity(intent5);
+                        break;
+
                     default:
                         break;
                 }
